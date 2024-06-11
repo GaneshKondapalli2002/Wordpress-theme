@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vaxi - Medical and Vaccination WordPress Theme</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
+  <style>
+  body {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.1px;
+    font-family: roboto, arial, sans-serif;
+    color: #333333;
+  }
+  ::selection {
+    background: #333333;
+    color: #fff;
+  }
+  ::-moz-selection {
+    background: #333333;
+    color: #fff;
+  }
+  h1 {
+    margin-bottom: 14px;
+    font-size: 34px;
+    line-height: 1.4;
+  }
+  h2, h3 {
+    margin-bottom: 14px;
+    font-size: 27px;
+    line-height: 1.8;
+  }
+  h4, h5 {
+    margin-bottom: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.8;
+  }
+  a:link, a:visited {
+    color: #2471fb;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #2471fb;
+  }
+  i {
+    opacity: 0.6;
+  }
+  .affix {
+    top: 20px;
+  }
+  .section { 
+    border: #ebecec 2px solid; 
+    padding: 25px; 
+    min-height: 200px;
+    margin-bottom: 25px;
+    background: #fff;
+  }
+  .popupimage {
+    cursor: pointer;
+    max-width: 400px;
+    margin: 25px 0;
+  }
+  .popupimage img{
+    cursor: pointer;
+    max-width: 400px;
+    margin: 25px 0;
+  }
+  @media (max-width: 500px) {
+  .popupimage img {
+    max-width: 100%;
+  }
+  }
+  .popupimage img:hover {
+    opacity: 0.7;
+  }
+  .modal-dialog img{
+    max-width: 100%;
+  }
+  @media (min-width: 1200px) {
+  .modal-dialog img{
+    max-width: 1000px;
+  }
+  }
+  .scrollbutton {
+    text-align: right;
+  }
+  .scrollbutton a{
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    color: #F37335;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    background: #ebecec;
+  }
+  @media (max-width: 992px) {
+  .scrollbutton {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  .scrollbutton a{
+    padding: 10px;
+  }
+  }
+  @media (max-width: 992px) {
+  .affix {
+    position: relative;
+  }
+  }
+  .navbar a{
+    border-radius: 0!important;
+  }
+  .nav-pills > li.active > a,
+  .nav-pills > li.active > a:hover,
+  .nav-pills > li.active > a:focus {
+    background-color: #2471fb;
+  }
+  .nav > li > a {
+    font-size: 15px;
+    color: #333333;
+    font-weight: bold;
+    background-color: #ebecec;
+  }
+  .nav > li > a:hover,
+  .nav > li > a:focus  {
+    background-color: #2471fb;
+    color: #fff;
+  }
+  .nav > li.dropdown.open > a,
+  .nav > li.dropdown.active > a{
+    background-color: #2471fb;
+    color: #fff;
+  }
+  .dropdown-menu {
+    font-size: 15px;
+    background-color: #ebecec;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .dropdown-menu > li > a {
+    color: #333;
+  }
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: #F37335;
+  }
+  .dropdown-menu > .active > a,
+  .dropdown-menu > .active > a:hover,
+  .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #2471fb;
+  }
+  .dropdown-menu {
+    position: relative;
+    display: block;
+    float: none;
+    border: none;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  ul.nav {
+    height: 550px;
+    overflow-y: scroll;
+  }
+  @media (max-width: 992px) {
+  ul.nav {
+    height: 250px;
+  }
+  }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid text-center" style="background-color:#2471fb;color:#fff;padding: 50px 25px;">
+  <h1><b><a style="color: white;" href="https://themeforest.net/user/rayoflightt/portfolio?ref=rayoflightt">Vaxi - Medical and Vaccination WordPress Theme</a></b></h1>
+  <h2> Theme Documentation</h2>
+ </div>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-3 navbar"  id="myNavbar">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+        <li><a href="#section1">Introduction</a></li>
+        <li><a href="#section2">Demo theme content setup </a></li>
+        <li><a href="#section3">Elementor page builder plugin</a></li>
+        <li><a href="#section4">Menus</a></li>
+        <li><a href="#section5">Contact form</a></li>
+        <li><a href="#section6">Pages and page templates</a></li>
+        <li><a href="#section7">Customizer theme options</a></li>
+        <li><a href="#section8">Shortcodes</a></li>
+        <li><a href="#section9">Widgets</a></li>
+        <li><a href="#section9a">How to set slider</a></li>
+        <li><a href="#section10">Custom post types</a></li> 
+        <li><a href="#section8a">How to set testimonials carousel</a></li>  
+        
+        <li><a href="#section12">How to set permalinks</a></li>
+        <li><a href="#section13">Plugins</a></li>
+        <li><a href="#section14">Child theme</a></li>
+        <li><a href="#section15">How to change color</a></li>
+				<li><a href="#section15a">Custom styling classes for Elementor columns</a></li>
+        <li><a href="#section16">Theme translation</a></li>
+        <li><a href="#section17">How to reorder posts</a></li>
+        <li><a href="#section18">Favicon</a></li>
+        <li><a href="#section19">Sources and credits</a></li>
+      </ul>
+    </nav>
+    <div class="col-md-9" style="max-width: 900px;">
+      <!-- introduction -->         
+      <div id="section1" class="section">    
+        <h3>Introduction</h3>     
+        <h5>Thank you for purchase!</h5> 
+        <p>
+        This is documentation for "Vaxi - Medical and Vaccination WordPress Theme". 
+        Documentation consists of sections. Every section explains specific part of theme or functionality.
+        List of sections is in left side of screen. 
+        </p>
+        <p>
+        - If you are new to WordPress, it is recommended to read 
+        <a href="https://codex.wordpress.org/Getting_Started_with_WordPress">official WordPress 
+        documentation </a> first.
+        </p>
+        <p>
+        - Please read theme documentation and follow instructions for demo theme content setup.
+        </p>
+        <p>
+        - Use search (ctrl+f keyboard shortcut) to find words on page.
+        </p>
+        <p>
+        - If you have questions please send message <a href="https://themeforest.net/user/rayoflightt#contact">here</a> using account that you purchased theme with to confirm purchase.
+        </p>
+        <p>
+        - Before asking for support please read more about <a href="https://themeforest.net/item/candidates-political-and-activism-html5-template/15527805/support">general support for themes</a>
+        and <a href="https://themeforest.net/page/item_support_policy">item support policy. </a>
+        </p>
+      </div>
+      <!-- introduction end -->             
+      <!-- demo theme content setup -->   
+      <div id="section2" class="section"> 
+        <h2>Demo theme content setup</h2>
+        <h5>Steps for demo theme content setup </h5>
+        <b>1.</b> <br> 
+        Unzip main.zip file that you downloaded from Themeforest, find „vaxi.zip“ and upload it to
+        WordPress dashboard.   
+        <br> <b>2.</b><br>  
+        In WordPress dashboard go to appearance/themes and activate theme „Vaxi“.  
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal1">
+  <img src="assets/images/1.jpg" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal1" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/1.jpg" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->
+
+<br> <b>3.</b><br>  
+Install and activate all recommended and required theme’s plugins
+
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal2a">
+  <img src="assets/images/2.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal2a" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/2.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal2">
+  <img src="assets/images/3.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal2" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/3.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal3">
+  <img src="assets/images/4.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal3" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/4.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->
+<div class="modal fade bs-example-modal-lg"  id="myModal4" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/1.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->
+  
+  <br> <b>4.</b><br>  
+  Go to tools/import and import demo.xml file. 
+ 
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal21">
+  <img src="assets/images/im.jpg" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal21" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/im.jpg" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->
+   <!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal6">
+  <img src="assets/images/6.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal6" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/6.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->   
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal7">
+  <img src="assets/images/7.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal7" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/7.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal8">
+  <img src="assets/images/8.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal8" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/8.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal9">
+  <img src="assets/images/9.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal9" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/9.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->
+  <p><i>Be sure to replace demo images with yours images or purchase license for demo images.
+ </i></p>
+  
+  <br> <b>5.</b><br>    
+  Go to appearance/menus and set demo content menu.  
+  <p>If you imported full demo content then you will have alredy "Menu 1" - theme demo menu (you can create new menus if needed). Mark the location for it in "Display location".
+ named "Desktop horizontal menu".</p>
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal10">
+  <img src="assets/images/10.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal10" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/10.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->  
+
+  <br> <b>6.</b><br>       
+  Go to Customizer - appearance/customize/homepage settings and set static page (front page) for home page
+  <p><i> Set other theme options as well. More about theme options you can read in section "theme options".</i></p> 
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal17">
+  <img src="assets/images/17.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal17" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/17.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end --> 
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal18">
+  <img src="assets/images/18.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal18" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/18.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end --> 
+ 
+ <br> <b>7.</b><br>   
+ Import theme demo widgets. Instal and activate this plugin:
+ <a href="https://wordpress.org/plugins/widget-importer-exporter/">
+ Widget importer & Exporter</a> and import widget.wie file.
+ Widget.wie file is in demo-content folder.
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal19">
+  <img src="assets/images/19.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal19" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/19.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end --> 
+ 
+ <!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal20">
+  <img src="assets/images/20.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal20" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/20.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->  
+ If there is problem with file upload, open wiget.wie file with
+ any text editor, copy content and paste in field as in screenshot below.
+
+
+ <!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal21">
+  <img src="assets/images/21.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal21" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/21.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->      
+   
+ <b id="section9a">8.</b><br> 
+Import demo content for slider (Smart Slider 3 plugin).
+In the "demo-content" folder is "vaxi-slider1.ss3" file.
+Upload it in Smart Slider 3 slider dashboard and copy/paste it's shortcode in page where you want slider to appear.
+Be sure to have activated Smart Slider 3 plugin recommended by theme (theme version 1.0.6 and above).
+Add your background images for slides, demo content do not contain images.
+Recommended image size for slider background image is width 2000px, height 800px.
+ <!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal21sl">
+  <img src="assets/images/sl.jpg" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal21sl" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/sl.jpg" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->   
+Click on "or import your own files".
+ <!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal21sl1">
+  <img src="assets/images/sl1.jpg" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal21sl1" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/sl1.jpg" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->   
+   
+ <b>9.</b><br>  
+ Basic installation is finished. For more details and 
+ functionalities please see sections list in left side of screen and continue reading.
+</div> 
+<!-- demo theme content setup end -->   
+  
+  <!-- elementor -->       
+<div id="section3" class="section">
+  <h2>Elementor page builder plugin</h2>
+  This theme is built with Elementor page builder plugin. 
+  <a href="https://elementor.com/">Official plugin page</a>
+  Theme will add custom Elementor widgets.
+  <!-- modal image -->  
+  <div class="popupimage" data-toggle="modal" data-target="#myModal491">
+  <img src="assets/images/elements.jpg" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal491" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/elements.jpg" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->    
+
+
+
+</div>
+<!-- elementor end -->    
+
+  <!-- menus -->       
+<div id="section4" class="section">
+  <h2>Menus</h2>
+  Theme has 1 custom menu locations. 
+  "Desktop horizontal menu" as main default menu.
+  <br>
+  "Menu 1" imported with demo content is theme demo menu (you can add new menus if needed). 
+  Set the location for the Menu 1 in "Display location". 
+  
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal10">
+  <img src="assets/images/10.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal10" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/10.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end --> 
+To create mega menu, be sure to add class "mega-menu-column"
+in menu's column where you want mega menu to appear.
+To activate css field in menus, open menus, click on "screen options"
+in top right corner of your dashboard and checkmark "css classes".
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModalmm">
+  <img src="assets/images/mm.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModalmm" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/mm.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->   
+
+  
+</div>
+<!-- menus end -->    
+
+
+<!-- contact form -->       
+<div id="section5" class="section">
+  <h2>Contact form</h2>
+  Everything related to contact is made with Contact form 7 plugin.
+ <a href="https://wordpress.org/plugins/contact-form-7/">Official plugin page.
+</a> 
+<br> 
+1. This is code for "Subscribe form":<br> <br> 
+<code> 
+
+&lt;div class="row footer-subscribe"&gt;
+&lt;div class="col-lg-4"&gt;
+&lt;h4>Stay updated on our latest news and medical guidness&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-8 footer-subscribe-2"&gt;
+[email* your-email placeholder "Your Email Address (required)"][submit "send"]
+&lt;/div&gt;
+&lt;/div&gt;
+
+</code> 
+
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal51">
+  <img src="assets/images/51.jpg" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal51" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/51.jpg" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end --> 
+
+<br> 
+2. This is code for "Homepage contact form":<br> <br> 
+
+<code> 
+
+&lt;div class="box-shadow custom-contact-form1"&gt;
+&lt;h4>Sign up to On-line Consultation:&lt;/h4&gt;
+&lt;div class="row p-0"&gt;
+
+&lt;div class="col-sm-12 pl-0 pr-0"&gt;
+&lt;label>Name&lt;/label&gt;
+[text* your-name placeholder "Your Name (required)"] 
+&lt;/div&gt;
+
+&lt;div class="col-sm-12 pl-0 pr-0"&gt;
+&lt;label>Email&lt;/label&gt;
+[email* your-email placeholder "Your Email Address (required)"]
+&lt;/div&gt;
+
+&lt;div class="col-sm-12 pl-0 pr-0"&gt;
+&lt;label>Message&lt;/label&gt;
+[textarea textarea-960 class:smalltextarea placeholder "Leave us message"]
+&lt;/div&gt;
+
+&lt;div class="col-sm-12 pl-0 pr-0 p-0"&gt;
+[submit "Send"]
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+</code> 
+
+<br> 
+<br> 
+3. This is code for "Coupon popup":<br> <br>  
+
+<code> 
+
+&lt;div class="row coupon-subscribe"&gt;
+&lt;div class="col-lg-6 "&gt;
+&lt;div class="coupon-subscribe-percent"&gt;
+-20%
+&lt;/div&gt;
+&lt;h3&gt;World Leader in Vaccination for Life!&lt;/h3&gt;
+&lt;p>Sed sed vehicula risus. Nam et lacus ut magna ornare tempus. Pellentesque tincidunt accumsan urna sed vulputate&lt;/p&gt;
+&lt;h4>Get Discount Coupon here&lt;/h4&gt;
+&lt;div class="coupon-subscribe-form"&gt;
+  &lt;div class="mr-1"&gt;[email* your-email placeholder "Email Address"]&lt;/div&gt;
+  &lt;div&gt;[submit "send"]&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-6 coupon-subscribe-image"&gt;
+&lt;img src="http://wp/wpvaxi/wp-content/uploads/2021/09/Cleaning-and-disinfection-2020.png" alt=""&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+</code> 
+
+<br> 
+<br> 
+4. This is code for "Contact form":<br> <br>  
+
+<code> 
+
+&lt;div class="row" style="max-width: 530px;"&gt;
+&lt;div class="col-sm-12 p-0"&gt;
+&lt;label>Name&lt;/label&gt;
+[text* your-name placeholder "Your Name (required)"] 
+&lt;/div&gt;
+&lt;div class="col-sm-12 p-0"&gt;
+&lt;label&gt;Email&lt;/label&gt;
+[email* your-email placeholder "Your Email Address (required)"]
+&lt;/div&gt;
+
+&lt;div class="col-sm-12 p-0"&gt;
+&lt;label&gt;Message&lt;/label&gt;
+[textarea textarea-960 class:smalltextarea placeholder "Leave us message"]
+&lt;/div&gt;
+&lt;div class="col-sm-12 p-0"&gt;
+[submit "Send"]
+&lt;/div&gt;
+
+</code> 
+
+
+<br> 
+<br> 
+5. This is code for "Appointment popup form":<br> <br>  
+
+<code> 
+
+&lt;div class="appointment-form" id="#test-form""&gt;
+&lt;div class="appointment-form-inner""&gt;
+&lt;h2>Request appointment&lt;/h2"&gt;
+
+&lt;div class="row""&gt;
+&lt;div class="col-sm-6 inputleft""&gt;
+&lt;label>Name&lt;/label"&gt;
+[text* your-name placeholder "Your Name (required)"] 
+&lt;/div"&gt;
+&lt;div class="col-sm-6 inputright""&gt;
+&lt;label>Email&lt;/label"&gt;
+[email* your-email placeholder "Your Email Address (required)"]
+&lt;/div"&gt;
+
+&lt;div class="col-sm-6 inputleft""&gt;
+&lt;label>Phone number&lt;/label"&gt;
+[text number-6 placeholder "Your phone number"]
+&lt;/div"&gt;
+&lt;div class="col-sm-6 inputright""&gt;
+&lt;label>Date&lt;/label"&gt;
+[date date-640  placeholder "Calendar schedule"]
+&lt;/div"&gt;
+
+&lt;div class="col-sm-6 inputleft""&gt;
+&lt;label>Specialization&lt;/label"&gt;
+[select menu-757 "pediatry" "virusology" "other"]
+&lt;/div"&gt;
+&lt;div class="col-sm-6 inputright""&gt;
+&lt;label>Doctor&lt;/label"&gt;
+[select menu-757 "John Doe" "Anne Doe" "Jane Doe" ]
+&lt;/div"&gt;
+
+
+&lt;div class="col-sm-12 p-0""&gt;
+&lt;label>Message&lt;/label"&gt;
+[textarea textarea-960 class:smalltextarea placeholder "Leave us message"]
+&lt;/div"&gt;
+&lt;p style="color: #fff;">Suspendisse potenti. Donec tristique dolor id sapien porttitor, rhoncus malesuada turpis ullamcorper. Congue quisque egestas diam in arcu cursus. Sit amet mattis vulputate enim nulla aliquet&lt;/p"&gt;
+&lt;div class="col-sm-12 p-0""&gt;
+[submit "Send your request"]
+&lt;/div"&gt;
+&lt;/div"&gt;
+&lt;/div"&gt;
+&lt;/div"&gt;
+
+</code> 
+
+
+</div> 
+<!-- contact form end -->   
+
+
+<!-- pages and page templates -->       
+<div id="section6" class="section">
+  <h2>Pages and page templates</h2>
+  Pages have 1 custom option, it is 
+  "Background image for page title". It works only for page templates that have main page headline(title).  <br>
+
+  
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal52">
+  <img src="assets/images/52.jpg" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal52" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/52.jpg" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->  
+5. Pages have few custom page templates. For pages created with Elementor page builder it is
+recommended to use "page full width (no title)" or "page full width (with title)" as page template.
+"Blog archive" and "blog archive sidebar" page templates will show blog posts.
+</div>
+<!-- pages and page templates end -->  
+
+
+<!-- theme options -->       
+<div id="section7" class="section">
+  <h2>Customizer theme options</h2>
+  Theme options are in appearance/customize. 
+  Options for logo, background images, 
+  copyright, 
+  add/remove main.less file (if you want to make modification in .less file, default is main.css file. 
+  Recommended for child theme customization), align menus etc.
+  
+     <!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal53">
+  <img src="assets/images/53.jpg" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal53" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/53.jpg" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->  
+</div>
+<!-- theme options end -->  
+
+
+<!-- shortcodes -->       
+<div id="section8" class="section">
+  <h2>Shortcodes</h2>
+<div style="text-decoration: line-through;">1. Custom shortcode for text in "advanced carousel" page builder element for a carousel.
+Advanced carousel page builder element is used for testimonials.
+If you imported demo it is already there.<br>
+<div id="section8a"> 
+<b>How to set testimonials carousel. (depreciated)</b></div>  </b>  <br>
+Add the testimonials shortcode in repeated list in 
+"advanced carousel" element. 
+<br><br>
+<code>
+[rtvaxi_testimonials text1="Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagittis in vitae elit. Nam neque erat, semper vel ultrices in, finibus eu magna. Pellentesque habitant morbi tristique" text2="- Katy Grey" url="https://twitter.com/" image="http://wp/wpvaxi/wp-content/uploads/2021/09/Wallpaper-1080p-8.jpg"]
+</code><br><br>
+<code>
+[rtvaxi_testimonials2 text1="Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagittis in vitae elit. Nam neque erat, semper vel ultrices in, finibus eu magna. Pellentesque habitant morbi tristique" text2="-Katy Grey" img="http://rayoflightthemes.com/wordpress-themes/vaxi-wordpress-theme/wp-content/uploads/2021/10/Avatar.png"]</code>
+<br>
+ <!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal60">
+  <img src="assets/images/test.jpg" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal60" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/test.jpg" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end --> 
+ <br></div>
+ <b>Testimonials have custom post types where content should be added, then added in theme with custom page builder testimonials widgets.</b><br><br>
+2. Custom shortcode for text in Owl carousel.
+ <br><code>
+[rtvaxi_slider1slide tag="H1" phonenumber="123456" title="Protected together" text="Pellentesque fringilla nisi eros, quis vulputate diam rutrum et. Mauris in erat auctor, scelerisque nisi in, laoreet risus. Phasellus venenatis tellus eget turpis vestibulum tempor. In tempor tincidunt porttitor" subtitle="Emergency Hotline 24/7" buttontext2="+1-795-5582-795" image="http://rayoflightthemes.com/wordpress-themes/vaxi-wordpress-theme/wp-content/uploads/2021/09/Hero-Img.jpg" buttonurl="https://themeforest.net/user/rayoflightt?ref=rayoflightt" buttontext="Buy here" external="_blank"] </code><br>
+ Options for tag are H1 and H2. Read more about slider in "how to set slider" section.
+ <br> <br>
+
+
+ </div>
+<!-- shortcodes end -->  
+
+
+<!-- widgets -->       
+<div id="section9" class="section">
+  <h2>Widgets</h2>
+  - Widgets are default WordPress feature. To open widgets go to appearance/widgets in dashboard. Official WordPress documentation: 
+  https://codex.wordpress.org/WordPress_Widgets
+
+  <br>
+  - Theme has 8 widget areas. In theme setup at top of the page is explained how to import demo widgets.
+
+
+ </div>
+<!-- widgets end -->  
+
+
+<!-- how to set home full page -->       
+<div id="section10" class="section">
+  <h2>Custom post types</h2>
+
+ Theme has 1 custom post type for Team filterable posts. 
+ Every post is for one team member.
+ With page builder's element "Team boxes with filter option" this custom post type can
+ be added in page where you want it to appear.
+ <br>
+ <!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal60d">
+  <img src="assets/images/team.jpg" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal60d" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/team.jpg" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->   
+ <br>
+ Other custom post types are from plugins "Owl carousel" and "Popup anything".
+ </div>
+<!-- how to set home full end -->  
+
+
+
+<!-- how to set permalinks -->       
+<div id="section12" class="section">
+  <h2>How to set permalinks</h2>
+  - Permalinks are in dashboard/settings/permalinks.
+  <br>
+  - It is recommended to have this permalinks structure (see screenshot):  
+  <br>
+       <!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModalpermalinks">
+  <img src="assets/images/permalinks.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModalpermalinks" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/permalinks.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end --> 
+
+  - If you get "404 page no found" error when trying to open page or post, after theme switch or plugin deactivation 
+  it is recommended to "reset permalins".   <br>
+  
+   <h5>How to reset permalinks?</h5> 
+   - Set permalinks to default (plain) and click button "save changes".  <br>
+   
+<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal66">
+  <img src="assets/images/66.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal66" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/66.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end --> 
+   
+   - Set permalinks to "post name" and click button "save changes".  <br>
+       <!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModalpermalinks">
+  <img src="assets/images/permalinks.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModalpermalinks" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/permalinks.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end --> 
+
+   - Done.  
+ </div>
+<!-- how to set permalinks end -->  
+
+
+
+<!-- plugins -->       
+<div id="section13" class="section">
+  <h2>Plugins</h2>
+  Rt Vaxi Theme Functions plugin - theme functions and custom post types plugin, bundled with theme.
+  <br><br>
+  Elementor page bulder plugin.
+  https://wordpress.org/plugins/elementor/
+  <br><br>
+  
+  Advanced custom fields plugin.
+  https://wordpress.org/plugins/advanced-custom-fields/
+  <br><br>
+  
+  Contact form 7 plugin.
+  https://sr.wordpress.org/plugins/contact-form-7/
+  <br><br>
+  
+  
+  SVG support plugin - allows SVG images uploading. (Upload SVG images in media library first.)
+  https://wordpress.org/plugins/svg-support/
+  <br><br>
+  
+  Breadcrumbs plugin.
+  https://wordpress.org/plugins/breadcrumb-navxt/
+  <br><br>
+  
+
+  
+  Owl carousel plugin.
+  https://wordpress.org/plugins/lgx-owl-carousel/
+  <br><br>
+  
+  Popup anything on click plugin.
+  https://wordpress.org/plugins/popup-anything-on-click/
+  <br><br>
+
+
+  For post's list widget, this plugin is recommended:
+  Latests post plugin.
+  https://wordpress.org/plugins/latest-posts/
+  <br><br>
+  
+ </div>
+<!-- plugins end -->  
+
+  
+ <!-- child theme -->       
+<div id="section14" class="section">
+  <h2>Child theme</h2> 
+  - Basic child theme "vaxi-child.zip" for this theme is in main_file.zip.
+  <br> 
+  - Official WordPress documentation about Child themes: https://codex.wordpress.org/Child_Themes
+  <br>
+  - It is recommended to activate child theme if you make code customizations and to copy/paste all files from parent theme
+with code custom changes in child theme.
+  </div>
+<!-- child theme end -->  
+
+
+  
+ <!-- how to change color -->       
+<div id="section15" class="section">
+  <h2>How to change color</h2> 
+	New! In theme version 1.0.8 new feature added for changing global colors in Customizer (dashboard/appearance/customize).
+	Open "Global colors" settings in Customizer, be sure to choose "main2-globalcolors.css added"
+	option 
+	and then change global theme colors. Colors are unlimited. (It is recommended that the color that you add instead of default one
+  has similar lightness and saturation to default color to better fit design).	
+	<br> 
+	<!-- modal image -->  
+<div class="popupimage" data-toggle="modal" data-target="#myModal1colors">
+  <img src="assets/images/colors.png" alt="">
+</div>
+<div class="modal fade bs-example-modal-lg"  id="myModal1colors" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="assets/images/colors.png" alt="">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<!-- modal image end -->
+	<h5>Below is the old method for changing color. Recommended only
+	if you need to make advanced changes with less file, requires coding knowledge.</h5>
+	
+  <i> Lot of elements from theme demo can have changed color in page builder.
+  Be sure to first check that. But if you need more detailed color change then contiune reading.
+  <br> 
+  - It is recommended to use child theme and main.less file to change color.
+  <br> 
+  <h5>Steps for color change</h5> 
+  a) Activate Child theme.   <br> 
+  b) Install and activate this plugin: https://sr.wordpress.org/plugins/lessify-wp/. <br> 
+  c) Go to "appearance/customize/add main.less file" and mark the second checkbox "add main.less file" 
+  (this will add main.less file in theme).<br>
+  d) Open main.less file from child theme in your hosting C-panel or via FTP. <br> 
+  e) In that file find HEX code for color (it's in top of file) and replace it with HEX code for color you want to have on site. <br> 
+  f) Save changes. New color should appear on site. <br> 
+   <br>
+  g) You can leave it that way and continue using the theme if you're more comfortable that way 
+ (you don't like to work with code) or (that is recommended) go to one of less-to-css online
+  compilers like: https://jsonformatter.org/less-to-css and copy in there all code from child theme main.less 
+  file, paste into editor and convert into css code. Then, open child theme style.css file and copy/paste 
+  converted css code from compiler into it. After this, lessify plugin should be deactivated and style.less file removed from site in "appearance/customize/add main.less file". 
+  <br>    <br>  
+  - There will probably be parts of site where color is added via page builder element so it will need to be changed manually in that page builder element.
+  <br>   <br> 
+  - To find HEX value for color you can use Photoshop or 
+  other software for graphic or take a look at this online 
+  color picker: http://www.w3schools.com/tags/ref_colorpicker.asp
+  <br>   <br> 
+  - In theme demo site, colors assigned to these color variables are: 
+<br>
+@first-color: #0a083b;<br>
+@second-color: #387efa;<br>
+@third-color: #2471fb;<br>
+@fourth-color: #19B8AF;<br>
+@fifth-color: #FE5858;<br>
+@sixth-color: #4D9CFF;<br>
+@seventh-color: #FFB71A;<br>
+@eighth-color: #E8F2FF;<br>
+@nineth-color: #c5dcfa;<br>
+
+  <br>   <br>
+  - to change HEX code to RGBA code go to this site: http://hex2rgba.devoth.com/  
+</i>
+  </div>
+<!-- how to change color end -->  
+ 
+ <!-- custom styling classes for elementor columns -->  
+  <div id="section15a" class="section">  
+	  <h2>Custom styling classes for Elementor columns</h2> 
+All these classes are already in demo content.
+<br>
+		"box-shadow" and "box-shadow-hover" are two custom classes that can be 
+		added in Elementor page builder columns or elements to get box shadow feature.
+		<br>
+		"box-shadow-1025" - for box shadow above 1025px.
+		<br>
+		"icons2ab-centered1025" - icons2 centered under 1025px.
+		<br>
+		"fullwidth1025" and "fullwidth767" - full width under 1025px and 767px for custom button1.
+		
+	</div>
+	<!-- custom styling classes for elementor columns end -->  
+	 
+ <!-- theme translation -->       
+<div id="section16" class="section">
+  <h2>Theme translation</h2> 
+  Theme has pot file included, that means text strings in dashboard can be translated.
+  Activate translation plugin (can use Polylang).
+  https://wordpress.org/plugins/polylang/	Check if "languages" 
+  tab in settings appears. In theme folder "languages" default pot file is included. To translate text strings in theme, please rename 
+  vaxi.pot file to "language code" for language you want 
+  to translate in, for example if you translate to Portugales language code
+  is "pt_BR" so vaxi.pot should be renamed to "pt_BR.po". Then open the file with Poedit and translate text strings. http://poedit.net/ 
+  More details about WordPress translation here
+  :http://codex.wordpress.org/WordPress_in_Your_Language 
+  http://codex.wordpress.org/Installing_WordPress_in_Your_Language
+  
+  </div>
+<!-- theme translation end -->  
+
+ <!-- how to reorder posts -->       
+<div id="section17" class="section">
+  <h2>How to reorder posts</h2> 
+  - Install and activate this plugin: https://wordpress.org/plugins/post-types-order/
+  <br> 
+  - It adds "reorder posts" button for all posts and custom post types and you can manually reorder them.
+  
+  </div>
+<!-- how to reorder posts end -->
+
+
+ <!-- favicon -->       
+<div id="section18" class="section">
+  <h2>Favicon</h2> 
+  Upload favicon in appearance/customize/site identity/site icon. Official documentation: https://codex.wordpress.org/Creating_a_Favicon
+  
+  </div>
+<!-- favicon end -->  
+
+
+ <!-- sources and credits -->       
+<div id="section19" class="section">
+  <h2>Sources and credits</h2> 
+  TGM plugin activation https://github.com/thomasgriffin/TGM-Plugin-Activation <br>
+  All free plugin mentioned above from WordPress respository. <br>
+  Bootstrap css framework, <br>Font Awesome font icons,<br> 
+  lightbox.js, <br>waypoints.js,<br>slick.js,<br> Google fonts,<br>
+  jQuery.js, <br>imagesloaded.js, <br> isotope.js, <br> magnific popup.js,
+  <br>
+  
+  <br>
+  <h5>Demo images credit</h5>
+
+  <br>
+Images are not included for download. Images are slightly transformed to fit design.
+Images and icons credit: http://flaticon.com/ , https://elements.envato.com/
+  <br>
+
+
+  </div>
+<!-- cources and credits end -->   
+
+    </div>
+  </div>
+</div>
+
+<div class="scrollbutton">
+  <a href="javascript:scrollToTop()" title="go to top">go to top</a>
+</div> 
+
+        <div style="width: 100%;float: left;text-align: center;padding: 25px;">
+          <p>Copyright <a href="http://themeforest.net/user/rayoflightt?ref=rayoflightt">RayoflightThemes.com</a> 2021.</p>
+        </div>
+
+<script>
+  function scrollToTop($) {
+  jQuery('html, body').animate({
+      scrollTop: 0
+  }, 'slow');
+}
+$(document).ready(function(){
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  $("#myNavbar a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+
+</body>
+</html>

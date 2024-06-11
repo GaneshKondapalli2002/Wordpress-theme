@@ -1,0 +1,52 @@
+/*
+ Theme Name:   Vaxi Child
+ Theme URI:    http://example.com/example-child/
+ Description:  Vaxi Child Theme
+ Author:       RayoflightThemes
+ Author URI:   http://rayoflightthemes.com
+ Template:     vaxi
+ Version:      1.0.0
+ Tags: gray, white, light, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-menu, featured-images, post-formats, sticky-post, translation-ready
+, page-builder
+ Text Domain:  vaxi-child
+*/
+
+
+select{
+  background: #fff url("assets/images/chevron-down.png") 100% 50% no-repeat;
+	background-image: url("assets/images/chevron-down.png") 100% 50% no-repeat;
+}
+.appointment-form select {
+  background: transparent url("assets/images/chevron-down-white.png") 96% 50% no-repeat;
+	background-image: url("assets/images/chevron-down-white.png") 96% 50% no-repeat;
+}
+.appointment-form input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url("assets/images/chevron-down-white.png") 96% 50% no-repeat;
+}
+select:focus {
+  box-shadow: 0;
+}
+.wp-caption p {
+  margin: 10px!important;
+}
+.wp-caption p:empty:before {
+ content:""!important;
+}
+
+.innerpages-title-wrapper .innerpages-title {
+  background: rgba(255,255,255,0.8) url("assets/images/bg1.png") center center no-repeat;
+	background-size: cover;
+}
+.testimonials,
+.testimonials2 {
+  background: url("assets/images/quotes.png") top left no-repeat;
+}
+@media all and (min-width: 991px) {
+.contactf1 {
+  max-width: 530px
+}
+}
+
+
+/**** add customization here ****/
+
